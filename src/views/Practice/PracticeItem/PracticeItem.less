@@ -1,0 +1,32 @@
+.topicList {
+  .currentSubject {
+    margin-top: 92px;
+    color: #666666;
+    font-size: 38px;
+  }
+
+  .topicContent {
+    margin-top: 17px;
+    overflow: hidden;
+    div {
+      width: 320px;
+      height: 80px;
+      text-align: center;
+      line-height: 80px;
+      color: #333;
+      font-size: 42px;
+      background: #f0f0f0;
+      float: left;
+      margin-right: 32px;
+      //三的倍数的元素, 不设置右边距
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      margin-top: 33px;
+      &.active{
+        background: #2E57FF;
+        color: #fff;
+      }
+    }
+  }
+}
